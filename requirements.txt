@@ -1,0 +1,8 @@
+  fpdf
+  cowsay
+  PIL
+  sys
+  datetim
+  re
+  pytest
+  

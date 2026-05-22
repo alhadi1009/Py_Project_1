@@ -15,6 +15,13 @@ from ImageClean import ImgClean
 def PDFGeneratorHelper(Name,Course,Author):
     PDF_Generate(Name,Course,Author)
 
+def ShowMenu():
+    
+    return " 1.PDF Generate\n 2.Poster\n 3.ID Card Generate \n 4.EXIT"    
+def validate_name(name):
+    return bool(re.match(r"[A-Za-z ]+$", name))
+def validate_Author(Author):
+    return bool(re.match(r"[A-Za-z. ]+$", Author))
 
 def main():
     print("Welcome to the Animated Smart PDF System")
@@ -22,8 +29,9 @@ def main():
         sys.stdout.write(f"\rApplication Opening {i}%")
         sys.stdout.flush()
         time.sleep(0.3)
-    print("\nFeatures: ")
-    print(" 1.PDF Generate\n 2.Poster\n 3.ID Card Generate \n 4.EXIT")
+    print("\nFeatures: ")    
+    ShowMenu() 
+       
     
     x=1
     while (x):
@@ -32,9 +40,9 @@ def main():
             if Checker == 1:
                 while(True):
 
-                     Name_patern=r"[A-Za-z ]+$"
+                    
                      Name=input("You Full Name: ")
-                     if  re.match(Name_patern,Name):
+                     if  validate_name(Name):
                          break
                 while(True):
                     try:
@@ -44,14 +52,15 @@ def main():
                         print("Please enter a valid name.")
                 while(True):
 
-                     Author_patern=r"[A-Za-z. ]+$"
+                    
                      Author=input("Author name: ")
-                     if  re.match(Author_patern,Author):
+                     if  validate_Author(Author):
                          break        
                      
                 PDFGeneratorHelper(Name,Course,Author)
                 cowsay.cow(">>> THANK YOU <<< PDF GENERATED SUCCESSFULLY")
             elif Checker == 2:
+                # it's now 
                 pass
             elif Checker == 3:
                 NumberOfStudent=int(input("How much Students ID's want you generate :"))
