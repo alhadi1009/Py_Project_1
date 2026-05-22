@@ -6,7 +6,7 @@
 
 ##  Description
 
-The **Animated Smart PDF System** is a Python-based automation project that generates different types of documents such as certificates, ID cards, and posters. It is designed to simplify and automate the process of creating structured PDF documents with dynamic user input.
+The **Animated Smart PDF System** is a Python-based automation project that generates different types of documents such as certificates,and ID cards. It is designed to simplify and automate the process of creating structured PDF documents with dynamic user input.
 
 This project was built using Python and combines multiple functionalities such as PDF generation, image processing, CSV handling, QR code generation, and file management. The system provides a menu-driven interface where users can select different options and generate outputs based on their input.
 

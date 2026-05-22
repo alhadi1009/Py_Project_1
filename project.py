@@ -17,7 +17,7 @@ def PDFGeneratorHelper(Name,Course,Author):
 
 def ShowMenu():
     
-    return " 1.PDF Generate\n 2.Poster\n 3.ID Card Generate \n 4.EXIT"    
+    return " 1.PDF Generate\n 2.ID Card Generate \n 3.EXIT"    
 def validate_name(name):
     return bool(re.match(r"[A-Za-z ]+$", name))
 def validate_Author(Author):
@@ -36,7 +36,7 @@ def main():
     x=1
     while (x):
         try:
-            Checker = int(input("Take option (like 1/2/3/4): "))
+            Checker = int(input("Take option (like 1/2/3): "))
             if Checker == 1:
                 while(True):
 
@@ -59,10 +59,8 @@ def main():
                      
                 PDFGeneratorHelper(Name,Course,Author)
                 cowsay.cow(">>> THANK YOU <<< PDF GENERATED SUCCESSFULLY")
+           
             elif Checker == 2:
-                # it's now 
-                pass
-            elif Checker == 3:
                 NumberOfStudent=int(input("How much Students ID's want you generate :"))
                 for _ in range(NumberOfStudent):
                     print(f"Give {_+1} Student Info :")
@@ -80,7 +78,7 @@ def main():
                    
 
                 pass
-            elif Checker == 4:
+            elif Checker == 3:
                 cowsay.cow("Thank you, come again later")
                 sys.exit(0)
             else:
