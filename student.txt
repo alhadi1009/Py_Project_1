@@ -1,6 +1,6 @@
-Name: alha
-Job: kji
-ID: ai a
-Mobile: 01315439290
-Email: ce@gmail.com
-Address: haan _aian
+Name: abdullah al raji
+Job: studnt
+ID: 23011
+Mobile: 01565765439
+Email: ce23011@mbstu.ac.bd
+Address: IMG/second.jpg

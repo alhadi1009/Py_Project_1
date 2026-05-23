@@ -17,7 +17,7 @@ def PDFGeneratorHelper(Name,Course,Author):
 
 def ShowMenu():
     
-    return " 1.PDF Generate\n 2.ID Card Generate \n 3.EXIT"    
+    return " 1.Certificate Generate\n 2.ID Card Generate \n 3.EXIT"    
 def validate_name(name):
     return bool(re.match(r"[A-Za-z ]+$", name))
 def validate_Author(Author):
@@ -30,7 +30,7 @@ def main():
         sys.stdout.flush()
         time.sleep(0.3)
     print("\nFeatures: ")    
-    ShowMenu() 
+    print(ShowMenu()) 
        
     
     x=1
